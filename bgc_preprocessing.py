@@ -62,7 +62,7 @@ for genome in ["Bacillus_subtilis", "Enterococcus_faecalis", "Lactobacillus_ferm
         # TODO: Match formatting to the human chromosome files
         
         # TODO: Write curr_chunk to appropriate directory as gzipped chr#.fa
-        out_path = curr_out_path + str(chr_num) + ".fa.gz"
+        out_path = curr_out_path + str(chr_num) + ".fna.gz"
         file_out = gzip.open(out_path, "wb")
         file_out.write(curr_chunk)
         file_out.close()
